@@ -3,39 +3,43 @@
     <title>Website Title!</title>
 
     <link rel="stylesheet" href="aesthetics.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <script>
-      function addDog() {
-        let dogCounter = document.querySelector(".dog-counter").innerText;
-        dogCounter = parseInt(dogCounter, 10);
-        document.querySelector(".dog-counter").innerText = dogCounter + 1;
+      function addBanana() {
+        let bananaCounter = document.querySelector(".banana-counter").innerText;
+        bananaCounter = parseInt(bananaCounter, 10);
+        document.querySelector(".banana-counter").innerText = bananaCounter + 1;
       }
 
-      function updateDog() {
-        let dogEntry = document.querySelector("#dog-entry").value;
-        document.querySelector(".dog-counter").innerText = dogEntry;
-      }
 
     </script>
 
   </head>
   <body>
-    <div id=SiteHeader>Random-Company-Thing Inc.</div>
+    <div id=SiteHeader>
+      <i style="display:inline;" class="material-icons">favorite</i>
+      <i style="display:inline;" class="material-icons">computer</i>
+      Random-Company-Thing Inc.
+    </div>
 
-    <div id=ToolBar></div>
+    <div id=ToolBar>
+      <div>
+        <input type="text" id="Username">
+        <button onclick="updateName()">Name Yourself!</button>
+      </div>
+
+      <div>
+        <button onclick="addBanana()">Eat Another Banana</button>
+      </div>
+
+    </div>
 
     <div class=Content>A link to another page: <a href="dog.html">about dogs</a></div>
 
     <div class=Content>
-      Dog Counter: <span class="dog-counter">0</span>
-    </div>
-
-    <div class=Content>
-      <button onclick="addDog()">Add Doggo</button>
-    </div>
-
-    <div class=Content>
-      <input type="text" id="dog-entry" value="0" onchange="updateDog()"/>
+      Bananas Eaten: <span style="font-size:40px; color:yellow;" class="banana-counter">0</span>
     </div>
 
   </body>

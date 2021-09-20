@@ -10,6 +10,9 @@
     border-radius: 0px;
 
     background-color: rgb(36, 39, 53);
+
+    color: white;
+    text-shadow: 2px 2px rgb(145, 151, 177);
   }
   #ToolBar{
     width: 15%;
@@ -26,12 +29,16 @@
     border-color:#4c5c7e;
 
     margin: 2px;
+
+    text-align: center;
   }
   .Content{
     margin-left: 15%;
     margin-top: 5%;
 
     padding-left: 15px;
+
+    color: rgb(145, 151, 177);
   }
   a {
     color: green;
