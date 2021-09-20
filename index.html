@@ -2,25 +2,7 @@
   <head>
     <title>Website Title!</title>
 
-    <style>
-      #SiteHeader{
-        border-style: outset;
-        border-color: black;
-        border-radius: 5px;
-        border-width: 10px;
-      }
-      a {
-        color: green;
-      }
-      body {
-        font-size: 30px;
-        background-color: grey;
-      }
-
-      body a {
-        font-size: 50px;
-      }
-    </style>
+    <link rel="stylesheet" href="aesthetics.css">
 
     <script>
       function addDog() {
@@ -39,17 +21,20 @@
   </head>
   <body>
     <div id=SiteHeader>Random-Company-Thing Inc.</div>
-    <div>A link to another page: <a href="dog.html">about dogs</a></div>
 
-    <div>
+    <div id=ToolBar></div>
+
+    <div class=Content>A link to another page: <a href="dog.html">about dogs</a></div>
+
+    <div class=Content>
       Dog Counter: <span class="dog-counter">0</span>
     </div>
 
-    <div>
+    <div class=Content>
       <button onclick="addDog()">Add Doggo</button>
     </div>
 
-    <div>
+    <div class=Content>
       <input type="text" id="dog-entry" value="0" onchange="updateDog()"/>
     </div>
 
